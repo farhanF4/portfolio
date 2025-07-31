@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Particle background global -->
+    <div id="global-particles" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-progress"></div>
+        <nav class="container">
+            <div class="logo">Farhan Fauzan</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Computer Engineering</h1>
+            <p>Know More About Me</p>
+            <a href="CV Muhamad Farhan Fauzan Setiawan FIX.pdf" class="cta-button" download>
+                📄 Download CV
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content scroll-animate">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Saya Farhan Fauzan belajar di bidang IT mampu membuat website portfolio, website perusahaan dan lain lain.
+                        Saya juga mampu melakukan SOC jaringan menggunakan Snort Instrusion Detection System (IDS) dengan Operating System Ubuntu.
+                        Mampu melakukan Konfigurasi Mikrotik menggunakan Winbox seperti Konfigurasi IP Address, DHCP Client.
+                        Memanagement Database menggunakan PhpMyAdmin, CRUD, Data Manipulation.
+                        dan juga Layanan Jaringan seperti pengoperasian Operating System Linux
+                        dan Ubuntu</p>
+                    <p>Saya percaya bahwa teknologi yang baik adalah yang dapat memecahkan masalah real di dunia nyata.</p>
+                    <p>Mari berkolaborasi untuk mewujudkan ide-ide hebat Anda menjadi kenyataan digital!</p>
+                </div>
+                <div class="about-image">
+                    <!-- ini buat isi dalam foto -->
+                    <div class="profile-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="scroll-animate">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Web Development -->
+                <div class="skill-card scroll-animate">
+                    <div class="skill-icon">📱</div>
+                    <h3>Web Frontend</h3>
+                    <p>Mengembangkan tampilan website yang menarik dan interaktif menggunakan HTML, CSS, dan JavaScript</p>
+                    <div class="portfolio-preview">
+                        <div class="preview-img">Blog Platform</div>
+                        <div class="preview-img">Corporate Website</div>
+                        <div class="preview-img">Portfolio Site</div>
+                        <div class="preview-img">Landing Page Design</div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Development -->
+                <div class="skill-card scroll-animate">
+                    <div class="skill-icon">💻</div>
+                    <h3>Management Mikrotik</h3>
+                    <p>Membangun Jaringan Mikrotik yang efisien dan aman menggunakan Software Winbox.</p>
+                    <div class="portfolio-preview">
+                        <div class="preview-img">Konfigurasi Firewall</div>
+                        <div class="preview-img">Konfigurasi Hotspot Login</div>
+                        <div class="preview-img">Konfigurasi IP Address</div>
+                        <div class="preview-img">Konfigurasi Simple Queues</div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="skill-card scroll-animate">
+                    <div class="skill-icon">🐧</div>
+                    <h3>Operating System Linux</h3>
+                    <p>Membangun Network dalam operating System Linux</p>
+                    <div class="portfolio-preview">
+                        <div class="preview-img">Snort (Instrusion Detection System)</div>
+                        <div class="preview-img">Configuration Network</div>
+                        <div class="preview-img">SSH System Device</div>
+                        <div class="preview-img">Wazuh Management</div>
+                    </div>
+                </div>
+
+                <!-- Data Analytics -->
+                <div class="skill-card scroll-animate">
+                    <div class="skill-icon">📊</div>
+                    <h3>Basis Data</h3>
+                    <p>Management Database melalui PhpMyAdmin.</p>
+                    <div class="portfolio-preview">
+                        <div class="preview-img">Data Definition Language</div>
+                        <div class="preview-img">Data Manipulation Language</div>
+                        <div class="preview-img">Query Dasar</div>
+                        <div class="preview-img">Backup atau Export Import Database</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="scroll-animate">Let's Work Together</h2>
+            <form class="contact-form scroll-animate" action="sendmail.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Tentang apa yang ingin Anda diskusikan?" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Ceritakan project atau ide Anda..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Me</h3>
+                    <p>Frontend Web Development</p>
+                    <p>📍 Bogor, West Java, Indonesia</p>
+                    <p>📧 farhanfauzan265@gmail.com</p>
+                    <p>📱 +62 896-8491-0907</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="#">Web Development</a>
+                    <a href="#">Security IDS</a>
+                    <a href="#">UI/UX Design</a>
+                    <a href="#">Database Management</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#about">About Me</a>
+                    <a href="#skills">My Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                    
+                    <p>Mari terhubung di media sosial!</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/farhanfauzanss/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/6289684910907" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Farhan Fauzan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
